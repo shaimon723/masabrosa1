@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    height: 100%;
+    
+    
+}
+
+.logo-snapchat { 
+    font-size: 40px;
+    color: red;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.nav {
+    background:black;
+    display: flex;
+    align-items: center;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    }
+.nav a:hover{
+    color: red;
+}
+.navigation {
+    display:flex;
+    align-items: center;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 10px;
+    
+    
+}
+.navigation li{
+    color: white;
+    font-size: 18px;
+    padding: 15px 15px;
+    
+}
+
+.myname h1{
+    padding: 40px;
+    text-align: center;
+}
+
+.shaimonlogo{
+
+    display: flex;
+    justify-content: center;
+}
+figure img{
+    border-radius: 50%;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme {
+    margin-top:80px;
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+.paragraph{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight:lighter;
+    font-style: oblique;
+    padding-left: 0px;
+    padding-right: 30px;
+    width: 90%;
+}
+
+.myprojects {
+    margin-top:80px;
+    font-size: 25px;
+    margin-left: 20px;
+
+}
+
+.myskills {
+    margin-top:80px;
+    font-size: 25px;
+    margin-left: 35px;
+}
+
+.skillset {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.skillset-logo{
+    display: flex;
+    justify-content: space-between;
+  list-style: none;
+    width: 400px;
+    text-decoration: none;
+}
+.skillset-logo a{
+    text-decoration: none;
+    color: inherit;
+}
+.skillset-logo a:hover {
+    color: red;
+}
+
+
+
+.contact-cards {
+    margin-bottom: 70%;
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    
+}
+
+.contact-items {
+    background-color:red;
+    align-items:center;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0 10px;
+    width: calc(33% - 20px);
+    height: 200px;
+    display: flex ;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+
+.card {
+    font-size: 20px;
+    background-color: black;
+    width: 50px;
+    height: 56px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: 0.7s ease;
+}
+/*.contact-cards :hover {
+   background-color:black;
+}*/
+
+.contact-items:hover .card {
+    background: black;
+    transform: scale(1.5);
+}
+
+.contact-items p{
+    max-height: 0;
+    font-weight: 300;
+    margin-top: 25px;
+    opacity: 0;
+    transition: 0.4s linear;
+}
+.contact-items:hover p{
+   opacity: 2; 
+   max-height: 30px;
+}
+
+.footer{
+    background-color: black;
+    height: 70px;
+    align-items: center;
+    position: botto;
+    width: 100%;
+}
+
+.footer h3{
+    color: white;
+    text-align: center;
+    margin-right: auto;
+    margin: auto;
+    padding-top: 10px;
+}
+    
+@media screen and (max-width:600px) {
+    .contact-cards{
+        flex-direction: column;
+    }
+    .contact-items{
+        width: 100%;
+        max-width: 360px;
+        margin: 20px 0;
+    }
+}
