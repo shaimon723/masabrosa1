@@ -183,6 +183,12 @@ figure img{
     width: 100%;
 }
 
+ .menu {
+   display: flex;
+   margin-left: 100%
+
+}
+
 .footer h3{
     color: white;
     text-align: center;
@@ -199,5 +205,11 @@ figure img{
         width: 100%;
         max-width: 360px;
         margin: 20px 0;
+    }
+    .logo-menu{
+        display: flex;
+    }
+    .navigation{
+        display: none;
     }
 }
