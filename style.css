@@ -19,6 +19,7 @@ body {
     margin-left: 15px;
     margin-bottom: 10px;
     align-items: center;
+    float: inline-start;
 }
 
 .nav {
@@ -183,9 +184,11 @@ figure img{
     width: 100%;
 }
 
- .menu {
+ .logo-menu {
    display: flex;
-   margin-left: 100%
+   display: none;
+
+  
 
 }
 
@@ -208,8 +211,14 @@ figure img{
     }
     .logo-menu{
         display: flex;
+        margin-left: 430px;
+        font-size: 40px;
+
+
     }
-    .navigation{
+    .navigation {
         display: none;
     }
+    }
+   
 }
