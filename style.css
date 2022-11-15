@@ -15,17 +15,16 @@ body {
 .logo-snapchat { 
     font-size: 40px;
     color: red;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    align-items: center;
-    float: inline-start;
+    margin: .7rem;
+    
+    
 }
 
 .nav {
-    background:black;
+    background:rgb(0, 0, 0);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .nav a{
     color: white;
@@ -43,10 +42,16 @@ body {
     
     
 }
-.navigation li{
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navigation li a{
     color: white;
     font-size: 18px;
-    padding: 15px 15px;
+    display: block;
+    padding: 1rem;
     
 }
 
@@ -185,11 +190,12 @@ figure img{
 }
 
  .logo-menu {
-   display: flex;
+   
    display: none;
-
-  
-
+   position: absolute;
+   top: .75rem;
+   
+   right: 1rem;
 }
 
 .footer h3{
@@ -211,14 +217,34 @@ figure img{
     }
     .logo-menu{
         display: flex;
-        margin-left: 430px;
-        font-size: 40px;
-
-
+        font-size: 35px;
+        }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
     }
+
     .navigation {
-        display: none;
+        display:none;
+        width: 100%;
+    }
+    .navigation ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation li {
+        text-align: center;
+    }
+
+    .navigation li a{
+        padding:  .7rem 1rem;
+    }
+    .navigation.active {
+        display:flex;
+        
+
     }
     }
+ 
    
-}
